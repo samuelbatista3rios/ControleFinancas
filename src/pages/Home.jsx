@@ -29,7 +29,7 @@ export default function Home() {
   const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth());
 
   const fetchExpenses = async () => {
-    const { data } = await axios.get("http://localhost:5000/api/expenses");
+    const { data } = await axios.get("https://backendfinancas-6nfq.onrender.com/api/expenses");
     setExpenses(data);
   };
 
